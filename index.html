@@ -53,17 +53,33 @@
              <br><small>"I have been more than three people’s hair dresser, plus myself." (current progress: 2/4) </small> 
            </p>
   
-             
           
 
       </header>
       <section>
     
-
         <h2> <font face="Kaiti"> 欲買桂花同載酒，終不似，少年游 </font> </h2>
 
-    
-        
+
+         <!-- Script to switch to articles-->
+    <script>
+      function switch_page(page) {
+        const pages = ["article 1", "article 2", "article 3"];
+        pages.forEach(item => document.getElementById(item).style.display='none');
+        document.getElementById(page).style.display='block';
+        return false;
+      }
+    </script>
+
+         <!-- load pages and articles -->
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $("#article1").load("https://windfall.github.io/article1.html");
+        $("#article2").load("https://windfall.github.io/article1.html");
+        $("#Article3").load("https://windfall.github.io/article1.html");
+    });
+    </script>
+
     
         
         
