@@ -1,100 +1,79 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title> Steven Bao's webpage</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aligned Header & Sections</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <!-- <link rel="stylesheet" href="stylesheets/pygment_trac.css"> -->
-    <link rel="stylesheet" href="stylesheets/extra_min_styles.css">
+        /* Wrapper to center content */
+        .container {
+            max-width: 1200px; /* Consistent width */
+            margin: 0 auto; /* Center the content */
+            padding: 20px;
+        }
 
-    <meta name="viewport" content="width=device-width">
+        /* Header Styling */
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
 
-        <!-- Icons -->
-    <link rel="stylesheet" href="stylesheets/css/academicons.css"/>
-    <link rel="stylesheet" href="stylesheets/css/font-awesome.css"/>
-    <link rel="stylesheet" href="stylesheets/css/academicons.min.css"/>
-    <link rel="stylesheet" href="stylesheets/style-svg.html">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-    <body data-new-gr-c-s-check-loaded="8.876.0" data-gr-ext-installed=""><div class="wrapper">
+        header h1 {
+            margin: 0;
+            padding: 0;
+        }
 
-    <!-- HEADER -->
+        /* Section Styling */
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* Fix for last section alignment */
+        .section:last-child {
+            margin-bottom: 50px; /* Adds spacing from bottom */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
     <header>
-      
-        <h1 align="center"> 苯海拉明 </h1>
-            <p align="center">
-             <br><small>Phding Sociology, writings related</small> 
-           </p>
-             
-            <!-- Intro -->
-           <p>
-             <small>“愿尽知世界/我只有扶额远游/对一生的虚掷无法考虑/故我离我远去...祝我成为那与我无关的人”
-             <br>1989，骆一禾</small>
-           </p>
+        <div class="container">
+            <h1>My Website</h1>
+        </div>
+    </header>
 
-      
-           <p>
-             <small>“贫于概念的精神首先得以表象为养料”
-             <br>1943，Francis Ponge</small>
-           </p>
+    <!-- Main Sections -->
+    <main class="container">
+        <div class="section">
+            <h2>Section 1</h2>
+            <p>This is the first section with aligned content.</p>
+        </div>
 
-           <p>
-             <br><small>"I have been more than three people’s hair dresser, plus myself." (current progress: 2/4) </small> 
-           </p>
-  
-          
+        <div class="section">
+            <h2>Section 2</h2>
+            <p>This is another section that stays properly aligned.</p>
+        </div>
 
-</header>
-<section>
-    
-<h2> <font face="Kaiti"> 欲買桂花同載酒，終不似，少年游 </font> </h2>
-  <ul class="posts">
-    <li><span>11 Jan 2024</span> &raquo; <a href="/jekyll/update/2024/01/11/welcome-to-jekyll.html">Welcome to Jekyll!</a></li>
-  </ul>
+        <div class="section">
+            <h2>Last Section</h2>
+            <p>This is the last section, now properly aligned with the header.</p>
+        </div>
+    </main>
 
-  
-<h1>Highlighted Media</h1>
-  <ul class="posts">
-    <li><span>02 Sep 2013</span> &raquo; <a href="https://www.wired.com/2013/09/github-for-anything/">Article: WIRED - GitHub Is Going Mainstream</a></li>
-    <li><span>09 Nov 2011</span> &raquo; <a href="http://vimeo.com/39016099">Video: RubyConf Argentina - Optimizing For Happiness</a></li>
-    <li><span>01 Oct 2011</span> &raquo; <a href="http://confreaks.com/videos/712-rubyconf2011-github-flavored-ruby">Video: RubyConf - GitHub Flavored Ruby</a></li>
-    <li><span>23 Nov 2010</span> &raquo; <a href="http://vimeo.com/17118008">Video: Erlang Factory - Mastering Git Basics</a></li>
-  </ul>
-
-<h1>Other Interviews, Talks, Etc</h1>
-  <ul class="posts">
-    <li><span>12 Sep 2013</span> &raquo; <a href="http://www.youtube.com/watch?v=k2vJNNAQZlg">Video: Fox Business News interview</a></li>
-    <li><span>02 Sep 2013</span> &raquo; <a href="http://www.wired.com/wiredenterprise/2013/09/github-for-anything/all/">Article: WIRED - GitHub Is Going Mainstream</a></li>
-    <li><span>25 Jul 2013</span> &raquo; <a href="http://www.youtube.com/watch?v=7DoB0SCUtOk&list=SP055Epbe6d5aclKNAa8msO1VvDOJ8sYlS&index=23">Video: O'Reilly Media - OSCON 2013 Interview</a></li>
-    <li><span>28 Dec 2012</span> &raquo; <a href="http://bits.blogs.nytimes.com/2012/12/28/github-has-big-dreams-for-open-source-software-and-more/">Article: NYTimes - Dreams of ‘Open’ Everything</a></li>
-    <li><span>20 Oct 2012</span> &raquo; <a href="http://www.youtube.com/watch?v=P9jjDpWzsUI">Video: Startup School 2012 - People, Product, Philosophy</a></li>
-    <li><span>27 Sep 2012</span> &raquo; <a href="http://www.youtube.com/watch?v=Ln-B_fs9QMY&feature=youtu.be">Video (Panel): Orrick - How to Build a Great Startup Culture</a></li>
-    <li><span>18 Jun 2012</span> &raquo; <a href="http://gigaom.com/cloud/10-innovators-changing-the-game-for-internet-infrastructure/7/">Article: GigaOm - 10 Innovators Changing the Game for Internet Infrastructure</a></li>
-    <li><span>02 Dec 2011</span> &raquo; <a href="http://vimeo.com/35640883">Video: Northern Lights Conference - Leveling Up</a></li>
-    <li><span>12 Nov 2011</span> &raquo; <a href="http://speakerdeck.com/u/mojombo/p/github-flavored-ruby">Slides: RubyConf Uruguay - GitHub Flavored Ruby</a></li>
-    <li><span>09 Nov 2011</span> &raquo; <a href="http://speakerdeck.com/u/mojombo/p/optimizing-for-happiness">Slides: RubyConf Argentina - Optimizing For Happiness</a></li>
-    <li><span>14 Apr 2011</span> &raquo; <a href="http://skillsmatter.com/podcast/agile-testing/optimizing-for-happiness">Video: ACCU Conference - Optimizing For Happiness</a></li>
-    <li><span>09 Apr 2011</span> &raquo; <a href="http://blogs.sitepoint.com/podcast-107-social-coding-with-githubs-tom-preston-werner/">SitePoint Podcast: Social Coding with GitHub’s Tom Preston-Werner</a></li>
-    <li><span>10 Feb 2011</span> &raquo; <a href="http://sea.ucar.edu/event/unlocking-secrets-git">Video: NCAR SEA: Unlocking the Secrets of Git</a></li>
-</div>
-
-
-
-
-  
- </section>
-    <footer>
-        <br>
-        <p style="line-height: 1.2;" align="center"><small> Hosted on GitHub Pages, theme by <a href="https://github.com/orderedlist">orderedlist</a>
-               <br/> and inspired by Eric H. Wang's <a href="https://erikhw.github.io"> website </a> </small></p>
-    </footer>
- 
-
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-  </body>
+</body>
 </html>
